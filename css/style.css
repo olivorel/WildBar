@@ -1,0 +1,928 @@
+/*Paramètre général*/
+
+body {
+    background-color: black;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-lg-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.col-xs-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#section1 {
+    padding-bottom: 10vh;
+    padding-top: 15vh;
+}
+
+#section2 {
+    padding-bottom: 10vh;
+    padding-top: 15vh;
+}
+
+#section3 {
+    padding-bottom: 10vh;
+    padding-top: 15vh;
+}
+
+#section4 {
+    padding-bottom: 10vh;
+    padding-top: 15vh;
+}
+
+/*Background color*/
+
+.background-blanc {
+    background-image: url(../img/brickwall.png);
+}
+
+section {
+    background-image: url(../img/brickwall.png);
+}
+
+/*Bandeau titre*/
+
+.container-fluid {
+    padding: 0;
+}
+
+/*Bandeau Image */
+
+#sectionHeader {
+    /*background du header déplacé ici pour qu'il couvre toute la largeur sans que la border du bandeau
+        titre soit forcée de le faire aussi*/
+    background-image: url("../img/bar3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bandeau_titre {
+    opacity: 0.8;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    padding-top: 5em;
+    position: fixed;
+}
+
+.bandeau_titre-sm {
+    background-image: url("../img/bar3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 5em;
+}
+
+/*Panneau md et lg*/
+.logowild {
+    background-image: url("../img/logoWILDBAR.png");
+    z-index: 5;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.panneau-titre {
+    border: 10px double whitesmoke;
+    border-radius: 5px;
+    height: 100%;
+    margin: 5vw 0 5vw 0;
+    background-size: cover;
+    box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.panneau-titre a {
+    text-decoration: none;
+    color: whitesmoke;
+    outline: none;
+}
+
+/*Debut Button Header*/
+
+.button_header:hover {
+    color: black;
+    border: 1px solid gray;
+    background-color: darkgray;
+    text-decoration: none;
+}
+
+.button_header {
+    display: block;
+    margin: auto auto 2vh auto;
+    background-color: #222222;
+    width: 12vw;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: calc(100% + 2vh);
+    font-family: 'Lobster Two', cursive;
+    text-decoration: none;
+}
+
+/*Animation fleche*/
+
+.glyphicon-menu-down:hover {
+    animation: bounce 0.9s ease;
+}
+
+@keyframes bounce {
+    from {
+        top: 0;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+/*Debut Panneau Titre taille md et lg*/
+
+h1 {
+    font-size: 11vw;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    display: block;
+    opacity: 1;
+    margin: 0;
+}
+
+.slogan {
+    font-size: 7vh;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    margin: 0;
+    opacity: 1;
+    padding-top: 5vh;
+}
+
+.info-panneau {
+    font-size: 3vh;
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    opacity: 1;
+    padding-top: 2vh;
+}
+
+/* Fin Panneau Titre taille md et lg*/
+
+/*Debut Panneau Titre taille xs et sm*/
+
+/*Panneau + Titre taille xs et sm*/
+
+.bandeau_titre-sm {
+    background-image: url("../img/bar3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+.panneau-titre-sm {
+    border: 5px double whitesmoke;
+    border-radius: 5px;
+    height: 85vh;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.panneau-titre-sm h1 {
+    font-size: 15vw;
+    text-align: center;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.panneau-titre-sm .slogan-sm {
+    font-size: 6vh;
+    color: white;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    padding-top: 10vh;
+}
+
+.panneau-titre-sm .info-panneau-sm {
+    font-size: 4vh;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', Sans-Serif;
+    font-style: italic;
+}
+
+/* Fin Panneau Titre Taille xs et sm*/
+
+/*Custom navbar*/
+
+.navbar {
+    min-height: 10vh;
+    padding-top: 2vh;
+    font-size: 3vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand {
+    font-size: calc(100% + 25px);
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-family: 'Lobster Two', cursive;
+}
+
+.navbar-header {
+    padding-right: 15px;
+}
+
+/*Text section navbar*/
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: darkgray;
+    background-color: transparent;
+}
+
+/*Navbar sticky + effet ombre*/
+
+.nav-sticky {
+    box-shadow: 0 -20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-sticky a {
+    outline: none;
+    border-radius: 5px;
+}
+
+a .nav#navbar-main {
+    font-size: 3vh;
+}
+
+/*Effet sticky de la navbar*/
+
+#navbar-main {
+    margin-bottom: 0;
+
+}
+
+#navbar-main .affix {
+}
+
+#navbar-main.affixed-top {
+    background: black;
+}
+
+#navbar-main.affix {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/*Fin de la navabr*/
+
+/*--------------------------------------------------------------------------------------*/
+/* Debut bandeau Happy hours lg et md*/
+
+.happy-hours {
+    background-image: url("../img/Free-Chalkboard-Backgrounds.jpg");
+    height: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.infohappyhours {
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px double whitesmoke;
+    border-radius: 5px;
+    height: 100%;
+    width: 40vw;
+}
+
+.logohappyhours {
+    background-image: url("../img/logohappyhours.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infohappyhours p {
+    font-family: 'Lobster Two', cursive;
+    font-size: 200%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 28vh;
+}
+
+/* Fin bandeau Happy hours lg et md*/
+
+/* Debut bandeau Happy hours xs et sm*/
+
+.happy-hours-sm {
+    background-image: url("../img/Free-Chalkboard-Backgrounds.jpg");
+    padding: 5vh 0 5vh 0;
+    height: 100%;
+}
+
+.infohappyhours-sm {
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px double whitesmoke;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.logohappyhours-sm {
+    background-image: url("../img/logohappyhours.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 40vh;
+    width: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infohappyhours-sm p {
+    font-family: 'Lobster Two', cursive;
+    font-size: 150%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 28vh;
+}
+
+/* Fin bandeau Happy hours xs et sm*/
+
+/*--------------------------------------------------------------------------------------*/
+
+/*  SECTION SPECIALITES */
+
+/*Debut carousel*/
+
+.sous_titre {
+    border: none;
+    padding: 0;
+    width: 10vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.carousel-inner > .item > img {
+    margin: auto;
+}
+
+.carousel {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    background: rgba(34, 34, 34, 0.8);
+    font-size: 3em;
+    padding: 25px;
+    border: 5px solid white;
+    border-style: double;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Fin carousel*/
+
+/*--------------------------------------------------------------------------------------*/
+
+/*  SECTION EQUIPE */
+
+/*debut soulignement*/
+
+#section4 h5 a {
+    color: black;
+    font-family: 'Lobster Two', cursive;
+    font-size: 3em;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a.effect-underline:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+a.effect-underline:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*fin soulignement*/
+
+.sous_titre2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2vw;
+    margin: 0;
+    color: black;
+}
+
+.icons, .phone, .legal_mentions {
+
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+
+}
+
+.group-icon {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.equipe_full {
+    padding-bottom: 5em;
+
+}
+
+.equipe_small {
+    padding-bottom: 5em;
+
+}
+
+.description_equipe {
+    padding: 0;
+
+}
+
+#section4 img {
+    border-radius: 3px;
+}
+
+#section1 p, #section4 p {
+    font-size: 3vh;
+    text-align: justify;
+    padding-top: 10vh;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* Effets sur images */
+
+.nico, .sylvain {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.separation {
+    padding-top: 3em;
+}
+
+.nico:hover .image, .sylvain:hover .image {
+    opacity: 0.3;
+
+}
+
+.nico:hover .middle_nico, .sylvain:hover .middle_sylvain {
+    opacity: 1;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle_nico, .middle_sylvain {
+    text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+/* Fin effets sur images*/
+
+/*icone_rotate*/
+@keyframes myrotate {
+    0% {
+        transform: rotate(0deg);
+    / / rotation de 0 degrés au début de l 'animation
+    }
+    100% {
+        transform: rotate(359deg);
+    / / rotation de 359 degré à la fin de l 'animation
+    }
+}
+
+.rotate:hover {
+    animation: myrotate 1.5s infinite linear;
+/ / attribue l 'animation nommée "myrotate" à la classe "rotate" au passage de la souris. L' animation dure 1.5 secondes et se répète indéfiniment, avec un déroulement linéraire .
+
+}
+
+.rotate:hover {
+    -webkit-animation: myrotate 1.5s infinite linear;
+    -moz-animation: myrotate 1.5s infinite linear;
+    -ms-animation: myrotate 1.5s infinite linear;
+    -o-animation: myrotate 1.5s infinite linear;
+    animation: myrotate 1.5s infinite linear;
+}
+
+/*fin icone rotate*/
+
+/*footer*/
+.google-maps {
+    position: relative;
+    padding-bottom: 100%;
+    /* This is the aspect ratio height: 0;*/
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding-top: 3.0em;
+    padding-bottom: 3.0em;
+}
+
+.nav_fullscreen li {
+    text-align: center;
+}
+
+.nav_smallscreen, .adress_small, .days_small {
+
+    padding: 5px 15px 20px 15px;
+    text-align: center;
+}
+
+.nav-footer p {
+    font-size: 3vh;
+    text-align: center;
+}
+
+.nav-footer li {
+    font-size: 3vh;
+    list-style: none;
+    text-align: center;
+
+}
+
+/*Fin partie footer*/
+
+/* fin partie l'équipe */
+
+/*Début bouton go back to top*/
+
+#goToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.8); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    border: solid 1px whitesmoke;
+}
+
+/*Fin bouton go back to top*/
+
+/*Parametre des Polices + Panneau Titre*/
+
+h2 {
+    font-size: calc(100% + 3em);
+    background-color: #222222;
+    text-align: center;
+    width: 50vh;
+    color: whitesmoke;
+    font-family: 'Lobster Two', cursive;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    /* border: solid 2px;
+    border-style: hidden hidden solid solid;*/
+    border: 6px double whitesmoke;
+    padding: 1.5vh 0 1.5vh 0;
+    border-radius: 3px;
+}
+
+h3 {
+    font-size: calc(100% + 2em);
+    /*text-align: center;*/
+    width: 50vh;
+    color: black;
+    font-family: 'Lobster Two', cursive;
+}
+
+h4, h5 {
+    font-family: 'Lobster Two', cursive;
+}
+
+.caption {
+    font-family: 'Lobster Two', cursive;
+}
+
+.caption button {
+    font-size: 2em;
+    background-color: #222;
+    border-color: #222;
+}
+
+.carousel-caption {
+    font-family: 'Lobster Two', cursive;
+}
+
+/*style section carte et jeux*/
+.background_carte {
+    background-image: url("../img/Free-Chalkboard-Backgrounds.jpg");
+    border: 6px double whitesmoke;
+    padding: 8% 0;
+
+}
+
+.carte h3 {
+    font-size: 2vw;
+}
+
+.screen-modalMdP {
+    font-size: 200%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 110%;
+}
+
+.screen-modalMdH {
+    font-size: 250%;
+}
+
+.screen-modalXsH {
+    font-size: 8vw;
+}
+
+.screen-modalXsP {
+    font-size: 6vw;
+    font-family: 'Raleway', sans-serif;
+    line-height: 110%;
+}
+
+#section3 h4 {
+    font-size: 230%;
+    font-family: 'Lobster Two', cursive;
+
+}
+
+#section3 p {
+    font-size: 180%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ijeux {
+    border-radius: 3px;
+}
+
+.jeux p {
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+.carte .btn-default {
+    background-color: #222222;
+    color: whitesmoke;
+}
+
+.xs-screen-thumbnail {
+    font-size: 5vw;
+}
+
+/* start overlay pool*/
+.pool_container {
+    position: relative;
+}
+
+.img-thumbnail-pool {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay_pool {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.pool_container:hover .img-thumbnail-pool {
+    opacity: 0.3;
+}
+
+.pool_container:hover .overlay_pool {
+    opacity: 1;
+}
+
+/* end overlay pool*/
+
+/* start overlay darts*/
+.darts_container {
+    position: relative;
+}
+
+.img-thumbnail-darts {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay_darts {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.darts_container:hover .img-thumbnail-darts {
+    opacity: 0.3;
+}
+
+.darts_container:hover .overlay_darts {
+    opacity: 1;
+}
+
+/*end overlay darts*/
+
+/* start overlay flipper*/
+.flipper_container {
+    position: relative;
+}
+
+.img-thumbnail-flipper {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay_flipper {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.flipper_container:hover .img-thumbnail-flipper {
+    opacity: 0.3;
+}
+
+.flipper_container:hover .overlay_flipper {
+    opacity: 1;
+}
+
+/* end overlay flipper*/
+
+/* start overlay darts*/
+.darts_container {
+    position: relative;
+}
+
+.img-thumbnail-darts {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay_darts {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.darts_container:hover .img-thumbnail-darts {
+    opacity: 0.3;
+}
+
+.darts_container:hover .overlay_darts {
+    opacity: 1;
+}
+
+/*end overlay darts*/
+
+/* start overlay flipper*/
+.flipper_container {
+    position: relative;
+}
+
+.img-thumbnail-flipper {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay_flipper {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.flipper_container:hover .img-thumbnail-flipper {
+    opacity: 0.3;
+}
+
+.flipper_container:hover .overlay_flipper {
+    opacity: 1;
+}
+
+.text_flipper {
+    padding-left: 20px;
+}
+
+/* end overlay flipper*/
+
